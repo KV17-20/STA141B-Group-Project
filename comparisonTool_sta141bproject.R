@@ -9,9 +9,11 @@ library(dplyr)
 library(stringr)
 library(fmsb)
 source("connections_scripts/build_hist.R")
-raw_data <- read.csv("connections_scripts/comparison.csv")
+raw_data <- read.csv("/Users/kazouavang/Documents/GitHub/STA141B-Group-Project/comparison.csv")
 raw_data[raw_data == 0] <- NA 
 data <- raw_data[complete.cases(raw_data),]
+###data <- data$name[53] = c("Batman I") #rename one of the two Batman to Batman I  
+data <- data[-52,] #remove the first batman
 
 ui <- shinyUI(navbarPage(
   tabPanel(
@@ -72,7 +74,7 @@ server <- shinyServer(function(input, output) {
         theta = c(colnames(data)[-(1:2)]),
         name = input$hero2
       ) 
-    SpiderPlot <- SpiderPlot%>%
+    SpiderPlot <- SpiderPlot %>%
       layout(
         polar = list(
           radialaxis = list(

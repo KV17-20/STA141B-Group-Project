@@ -1,0 +1,12 @@
+.row {
+  margin-bottom: 15px;
+}
+
+.heroImage {
+  border-radius: 5px;
+}
+
+.col-md-6 {
+  width:49%;
+  display:inline-block;
+}
