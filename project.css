@@ -10,3 +10,16 @@
   width:49%;
   display:inline-block;
 }
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#superheromap {
+  height: 90vh !important;
+}
