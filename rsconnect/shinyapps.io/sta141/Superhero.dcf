@@ -1,0 +1,13 @@
+name: Superhero
+title: Superhero
+username:
+account: sta141
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1973512
+bundleId: 2904468
+url: https://sta141.shinyapps.io/Superhero/
+when: 1584767412.31019
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData
